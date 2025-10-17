@@ -1,25 +1,41 @@
-export default function Home() {
+import React from "react";
+import "../style.css"; // style global si tu as
+
+function Home() {
   return (
-    <section className="p-10 text-center bg-gray-50 min-h-screen">
-      <h1 className="text-5xl font-extrabold mb-6 text-primary">
+    <div
+      className="home-container"
+      style={{
+        backgroundImage: `url("/est-sidi-bennour.jpg")`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        color: "#fff",
+        textAlign: "center",
+        padding: "0 20px",
+      }}
+    >
+      <h1 style={{ fontSize: "4rem", fontWeight: "bold", marginBottom: "20px", textShadow: "2px 2px 8px #000" }}>
         Bienvenue à l'EST Sidi Bennour
       </h1>
-      <p className="text-lg mb-8 text-gray-700">
-        Formation, innovation et excellence technologique.
+      <p style={{ fontSize: "1.8rem", marginBottom: "40px", textShadow: "1px 1px 5px #000" }}>
+        Formation, innovation et excellence technologique
       </p>
 
-      <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-        <div className="border rounded-lg p-6 shadow-lg hover:scale-105 transition bg-white">
-          Nos Filières
-        </div>
-        <div className="border rounded-lg p-6 shadow-lg hover:scale-105 transition bg-white">
-          Admission
-        </div>
-        <div className="border rounded-lg p-6 shadow-lg hover:scale-105 transition bg-white">
-          Vie Étudiante
-        </div>
+      <div className="buttons-container" style={{ display: "flex", gap: "20px", flexWrap: "wrap", justifyContent: "center" }}>
+        <a href="/departments" className="btn green">Filières</a>
+        <a href="/about" className="btn blue">À propos</a>
+        <a href="/contact" className="btn purple">Contact</a>
       </div>
-    </section>
+    </div>
   );
 }
+
+export default Home;
+
+
 

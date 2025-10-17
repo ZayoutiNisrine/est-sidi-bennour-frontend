@@ -2,6 +2,7 @@
   "name": "est-sidi-bennour-frontend",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
   "homepage": "https://zayoutinisrine.github.io/est-sidi-bennour-frontend",
   "scripts": {
     "dev": "vite",
@@ -13,14 +14,14 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.14.0"
+    "react-router-dom": "^6.30.1"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^5.0.4",
+    "@vitejs/plugin-react": "^4.1.0",
     "autoprefixer": "^10.4.15",
     "gh-pages": "^5.0.0",
-    "postcss": "^8.4.24",
-    "tailwindcss": "^3.3.2",
+    "postcss": "^8.4.27",
+    "tailwindcss": "^3.3.3",
     "vite": "^4.5.14"
   }
 }

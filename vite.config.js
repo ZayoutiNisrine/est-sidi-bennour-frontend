@@ -1,7 +1,8 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
+// ⚠️ Mets ici ton nom GitHub + le nom du repo
 export default defineConfig({
   plugins: [react()],
-});
+  base: '/est-sidi-bennour-frontend/',
+})
